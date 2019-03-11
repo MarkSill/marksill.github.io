@@ -1,0 +1,98 @@
+.ms-style {
+	--ms-color-fg-primary: #aaa;
+	--ms-color-bg-primary: #333;
+	--ms-color-fg-accent: var(--ms-color-fg-primary);
+	--ms-color-bg-accent: #111;
+	--ms-color-fg-clickable: #0af;
+	--ms-color-fg-clickable--hover: #09e;
+
+	font-family: sans-serif;
+	background-color: var(--ms-color-bg-primary);
+	color: var(--ms-color-fg-primary);
+	margin: 0;
+}
+
+.ms-main-content {
+	margin: 8px;
+}
+
+.ms-top-bar {
+	background-color: var(--ms-color-bg-accent);
+	color: var(--ms-color-fg-accent);
+	width: calc(100% - 16px);
+	padding: 8px;
+	position: sticky;
+	top: 0;
+	overflow: auto;
+	box-shadow: 0 3px 5px var(--ms-color-bg-accent);
+}
+
+.ms-top-bar .ms-top-bar__title {
+	font-size: 2.5em;
+	color: inherit;
+}
+
+.ms-top-bar__left {
+	display: inline-block;
+}
+
+.ms-top-bar__right {
+	display: inline-block;
+	float: right;
+}
+
+.ms-style .ms-icon-button {
+	font-size: 32px;
+	color: inherit;
+	padding: 4px;
+	transition: transform 150ms, color 200ms, background-color 200ms;
+}
+
+.ms-icon-button:hover {
+	color: inherit;
+	transform: scale(1.2);
+}
+
+.ms-style .ms-icon-button:after {
+	display: none;
+}
+
+.ms-style a {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: var(--ms-color-fg-clickable);
+	transition: color 150ms, background-color 150ms;
+}
+
+.ms-style a:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	background-color: var(--ms-color-fg-clickable);
+	transition: 150ms;
+	border-radius: 2px;
+	opacity: 0;
+}
+
+.ms-style a:hover {
+	color: var(--ms-color-fg-clickable--hover);
+}
+
+.ms-style a:hover:after {
+	width: 100%;
+	left: 0;
+	opacity: 1;
+}
+
+.ms-style--light {
+	--ms-color-fg-primary: black;
+	--ms-color-bg-primary: white;
+	--ms-color-fg-accent: #ccc;
+	--ms-color-bg-accent: black;
+}
+

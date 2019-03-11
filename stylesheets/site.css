@@ -1,0 +1,17 @@
+.icon-twitter:hover {
+	color: #1da1f2 !important;
+}
+
+.icon-youtube:hover {
+	color: #f00 !important;
+}
+
+.ms-top-bar__left .ms-top-bar__title {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.ms-top-bar__left .ms-icon {
+	margin-right: 4px;
+}
