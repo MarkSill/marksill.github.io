@@ -6,6 +6,10 @@
 	color: #f00 !important;
 }
 
+.icon-github:hover {
+	color: inherit !important;
+}
+
 .ms-top-bar__left .ms-top-bar__title {
 	display: flex;
 	align-items: center;
